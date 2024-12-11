@@ -1,0 +1,238 @@
+/* Yleiset tyylit */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f4f4f9;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: fadeIn 2s;
+}
+
+header p {
+  font-size: 1.2rem;
+  animation: fadeIn 2.5s;
+}
+
+/* Sektiot */
+.section {
+  padding: 3rem 1.5rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #2575fc;
+  margin-bottom: 1.5rem;
+}
+
+
+
+/* Projektit */
+.projects .project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Projektikortit */
+.project {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(89, 0, 255, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth kasvuanimaatio */
+}
+
+.project img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Smooth kuva-efekti */
+}
+
+/* Hover-efekti */
+.project:hover {
+  transform: scale(1.05); /* Kasvata 5 % */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Lisää varjo */
+}
+
+.project:hover img {
+  transform: scale(1.05); /* Kuva kasvaa samassa suhteessa */
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  transition: color 0.3s ease;
+}
+
+.project p {
+  color: #666;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.project:hover h3 {
+  color: #6a11cb; /* Korosta otsikko hoverilla */
+}
+
+.project:hover p {
+  color: #2575fc;
+  transform: translateY(-5px); /* Nosta tekstiä hieman hoverilla */
+}
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.footer-container p {
+  margin: 0.5rem 0;
+}
+
+.footer-container a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* Animaatiot */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+/* Yleinen tyyli tiimijäsenelle */
+.minä {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.minusta {
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Kuva tyylit */
+.minusta img {
+  width: 40%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover-efekti: Suurennus ja varjo */
+.minusta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.minusta:hover img {
+  transform: scale(1.1);
+}
+
+/* Nimi ja teksti */
+.minusta h3 {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.minusta p {
+  font-size: 1rem;
+  color: #666;
+}
+/* Tehdään game containerille ulkoasu */
+.game-container {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: rgb(167, 41, 167);
+  border-radius: 15px;
+  font-size: 0.9rem;
+  position: relative;
+  text-align: center;
+  
+}
+/* Lisätään sininen hieno hoveri kun gamecontaineriin laitetaan hiiri */ 
+.game-container:hover {
+  color: #2575fc;
+  box-shadow: 1px 2px 20px #2575fc;
+}
+/* Piilotetaan restart nappi*/
+.hidden {
+  display: none;
+ 
+}
+/* Laitetaan tulokselle valkoinen väri */
+#feedback {
+  color: white;
+}
+/* Laitetaan tekstiboxille johon laitetaan numero valkoinen väri ja sininen hover ja väri */
+#guess {
+  color: white;
+  background-color: #2575fc;
+  box-shadow: 1px 2px 18px #0099ff;
+}
+/* Nappi */
+button {
+  display: inline-block;
+    text-decoration: none;
+    background-color: #3498db; 
+    color: white;
+    padding: 12px 25px; 
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease-in-out;
+    margin-bottom: 10px;
+    position: relative;
+}
+button:hover{
+  color: #2575fc;
+  box-shadow: 1px 2px 20px #2575fc;
+}

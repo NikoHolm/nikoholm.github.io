@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fí">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV | Niko Holm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tervetuloa CV sivulleni</h1>
+        <p>Olen Niko Holm, Tietoja viestintä tekniikan opiskelija erityisesti ohjelmoinnin. etsin työharjoittelupaikkaa (tammikuu - huhtikuun)</p>
+        <p>Tutustu töihini ja osaamiseeni alta! Githubistani löytyy jokainen Projektityö kannattaa katsoa!</p>
+    </header>
+
+    <main>
+        <!-- Tietoa minusta ja mitä osaan. -->
+        <section id="about"c lass="section">
+            <div class="container">
+                <h2>Tietoa Minusta</h2>
+                <p>Hei! Olen Tietoja viestintätekniikan opiskelija Savon ammattiopistolla. Olen kiinnostunut erityisesti oppimaan sovellusten kehittämisestä sekä nettisivujen tekemisestä ja tavoittelen työharjoittelupaikkaa, jossa voisin kehittää taitojani ja oppia uutta.</p>
+              
+                <div class="minä">
+                    <div class="minusta">
+                        <img src="selfie.jpeg" alt="Niko Holm">
+                        <h3>Niko Holm</h3>
+                        <p><strong>Hei olen Niko Holm 2007 syntynyt nuorenmiehen alku Varpaisjärveltä. Olen innostunut koodamisesta ja erityisesti haluan oppia tekemään paremmin nettisivuja ja mobiilisovelluksia.</strong></p>
+                        <p>Osaan näitä ohjelmointi kieliä.</p>
+                        <p>HTML, CSS, PHP, C# ja hiukan javascript.</p>
+                        <p>Osaan myös käyttää photoshoppia, blenderiä ja gimppiä.</p>
+                        <p>Olen myös ollut kesätöissä S-market varpaisjärvellä.</p>
+                    </div>
+                </div>
+ 
+            </div>
+        </section>
+
+        <!-- Projektit -->
+        <section id="projects" class="section projects">
+            <div class="container">
+                <h2>Projektini</h2>
+                <div class="project-grid">
+                    <div class="project">
+                        <img src="verkkokauppa.png" alt="Projektikuva 1">
+                        <h3>Verkkokauppa</h3>
+                        <p>Tein verkkokauppa projektin jossa käytin php css html ja sql sivustolla pystyy lisäämään ostoskoriin tuotteita, tuotteet otetaan tietokannasta ja niiden hinnat myös. Suosittelen katsoa koko verkkokaupan.
+                        </p>
+                    </div>
+                    <div class="project">
+                        <img src="pizza.png" alt="Projektikuva 2">
+                        <h3>Projekti 2</h3>
+                        <p>Tein C# pizzerian menun käyttäen checkboxeja ja tarkistin if:illä ja jokaisessa textboxissa pitää olla joku numero jotta ohjelma toimii. Tämä oli minun ensimmäinen projektityö.</p>
+                    </div>
+                    <div class="project">
+                        <h3>Kotisivut</h3>
+                        <p>Minun kolmas projektini oli tehdä kotisivut jotka ovat näyttävät ja ammattimaiset josta löytää yhteystietoni ja projektityöni ja tässä on lopputulos mitä sain tehtyä.</p>
+                    </div>
+                    
+                </div>
+                <h2> Voit ladata työni joko footerin linkistä tai githubista</h2>
+            </div>
+        </section>
+    </main>
+    <div class="game-container">
+        <h1>Arvaa Numero</h1>
+        <h3>Arvaa numero 1 ja 100 väliltä:</h3>
+        <input type="number" id="guess" placeholder="Anna arvauksesi" />
+        <button id="submit">Arvaa</button>
+        <p id="feedback"></p>
+        <button id="restart" class="hidden">Aloita alusta</button>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <h2>Yhteystiedot</h2>
+            <p><strong>Sähköposti:</strong> niko.holm@edu.sakky.fi</p>
+            <p><strong>Puhelin:</strong> +358 044 976 0869</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/NikoHolm" target="_blank">Githubini</a></p>
+
+
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Niko holm. Kaikki oikeudet pidätetään.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
